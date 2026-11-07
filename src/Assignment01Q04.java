@@ -3,6 +3,8 @@ import java.util.Arrays;
 public class Assignment01Q04 {
 
     public static int[] shiftArrayCyclic(int[] array, int move, char direction) {
+        if (array.length == 0) return array;
+        
         int sign = switch (direction) {
             case 'R' -> 1;
             case 'L' -> -1;
